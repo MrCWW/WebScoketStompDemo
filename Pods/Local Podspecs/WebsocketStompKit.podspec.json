@@ -1,0 +1,22 @@
+{
+  "name": "WebsocketStompKit",
+  "version": "0.1.1",
+  "summary": "STOMP over Websocket Objective-C Client for iOS.",
+  "homepage": "https://github.com/rguldener/WebsocketStompKit",
+  "license": "Apache License, Version 2.0",
+  "authors": "Jeff Mesnil & Robin Guldener",
+  "source": {
+    "git": "https://github.com/rguldener/WebsocketStompKit.git"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": "WebsocketStompKit/*.{h,m}",
+  "public_header_files": "WebsocketStompKit/WebsocketStompKit.h",
+  "requires_arc": true,
+  "dependencies": {
+    "jetfire": [
+      "0.1.2"
+    ]
+  }
+}

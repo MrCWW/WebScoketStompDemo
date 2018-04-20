@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    STOMPClient *client = [[STOMPClient alloc] initWithURL:websocketUrl websocketHeaders:nil useHeartbeat:NO];
     return YES;
 }
 

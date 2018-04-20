@@ -15,6 +15,7 @@
 		432033782089C2E00001A3F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 432033772089C2E00001A3F5 /* main.m */; };
 		432033822089C2E00001A3F5 /* StompDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 432033812089C2E00001A3F5 /* StompDemoTests.m */; };
 		4320338D2089C2E00001A3F5 /* StompDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4320338C2089C2E00001A3F5 /* StompDemoUITests.m */; };
+		5AEED9AEB4DFBA1203DDFEAD /* libPods-StompDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAD4D1B27B1402BDB144A6B /* libPods-StompDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EF3A5A37FA98480C62ABAE1 /* libPods-StompDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StompDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		432033652089C2E00001A3F5 /* StompDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StompDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		432033682089C2E00001A3F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		432033692089C2E00001A3F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		432033882089C2E00001A3F5 /* StompDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StompDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4320338C2089C2E00001A3F5 /* StompDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StompDemoUITests.m; sourceTree = "<group>"; };
 		4320338E2089C2E00001A3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A22C024BCB3BFEC0392C81D /* Pods-StompDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StompDemo/Pods-StompDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9FAD4D1B27B1402BDB144A6B /* libPods-StompDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StompDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F4131582F2037188DD95FE /* Pods-StompDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StompDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StompDemo/Pods-StompDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FCD06880935A11F6558B9E5C /* libPods-StompDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StompDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEED9AEB4DFBA1203DDFEAD /* libPods-StompDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,8 @@
 				432033802089C2E00001A3F5 /* StompDemoTests */,
 				4320338B2089C2E00001A3F5 /* StompDemoUITests */,
 				432033662089C2E00001A3F5 /* Products */,
+				B0DCDE49C1B6469D62D559D9 /* Pods */,
+				5DD7F7F6975F7715ADA0457D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +141,25 @@
 			path = StompDemoUITests;
 			sourceTree = "<group>";
 		};
+		5DD7F7F6975F7715ADA0457D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FAD4D1B27B1402BDB144A6B /* libPods-StompDemo.a */,
+				1EF3A5A37FA98480C62ABAE1 /* libPods-StompDemoTests.a */,
+				FCD06880935A11F6558B9E5C /* libPods-StompDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0DCDE49C1B6469D62D559D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A22C024BCB3BFEC0392C81D /* Pods-StompDemo.debug.xcconfig */,
+				E7F4131582F2037188DD95FE /* Pods-StompDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 432033912089C2E00001A3F5 /* Build configuration list for PBXNativeTarget "StompDemo" */;
 			buildPhases = (
+				BC707D1AA022D7376D1EB085 /* [CP] Check Pods Manifest.lock */,
 				432033612089C2E00001A3F5 /* Sources */,
 				432033622089C2E00001A3F5 /* Frameworks */,
 				432033632089C2E00001A3F5 /* Resources */,
+				045DA415FEBE6B7F8AE0630C /* [CP] Embed Pods Frameworks */,
+				D407A3B017F9455ADDD7FB41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +290,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		045DA415FEBE6B7F8AE0630C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StompDemo/Pods-StompDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC707D1AA022D7376D1EB085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StompDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D407A3B017F9455ADDD7FB41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StompDemo/Pods-StompDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		432033612089C2E00001A3F5 /* Sources */ = {
@@ -428,6 +510,7 @@
 		};
 		432033922089C2E00001A3F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A22C024BCB3BFEC0392C81D /* Pods-StompDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +524,7 @@
 		};
 		432033932089C2E00001A3F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F4131582F2037188DD95FE /* Pods-StompDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
